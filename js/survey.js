@@ -12,7 +12,7 @@ $(function() {
             if (disabled.hasClass("disabled")) {
                 disabled.removeClass("disabled");
             }
-            submit.addClass("disabled");
+            submit.removeClass("disabled");
         }
     });
     advNo.on("click", function() {
@@ -21,7 +21,7 @@ $(function() {
                 disabled.addClass("disabled");
         }
         if (submit.hasClass("disabled")) {
-            submit.removeClass("disabled");
+            submit.addClass("disabled");
         }
         if(!firstInfo.hasClass("disabled"))  {
           if(!lastInfo.hasClass("disabled"))  {
