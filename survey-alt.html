@@ -8,13 +8,14 @@
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
     <style>
     #wrapper {
         background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://www.shunvmall.com/data/out/158/47839863-minimalist-wallpaper.png') no-repeat center center fixed;
         background-size: cover;
         padding-top: 50px;
     }
-    .rad-head  {
+    .radio {
       margin-left: 40px;
     }
     </style>
@@ -50,34 +51,14 @@
             <div class="grouped fields">
                 <div class="form-group">
                     <p>Were you familiar with UBI before you found us?</p>
-                    <div class="row radio">
-                      <div class="rad-head">
-                        <input type="radio" name="familiar" id="famYes">
-                        <label>Yes</label>
-                      </div>
-                    </div>
-                    <div class="row radio">
-                      <div class="rad-head">
-                        <input type="radio" name="familiar" id="famNo" checked>
-                        <label>No</label>
-                      </div>
-                    </div>
+                        <label class="radio"><input type="radio" name="familiar" id="famYes">Yes</label>
+                        <label class="radio"><input type="radio" name="familiar" id="famNo" checked>No</label>
                 </div>
 
                 <div class="form-group">
                     <p>Are you a resident of the U.S.?</p>
-                    <div class="row radio">
-                    <div class="rad-head">
-                        <input type="radio" name="US resident" id="US_yes">
-                        <label>Yes</label>
-                    </div>
-                  </div>
-                    <div class="row radio">
-                    <div class="rad-head">
-                      <input type="radio" name="not US resident" id="US_no">
-                      <label>No</label>
-                    </div>
-                  </div>
+                      <label class="radio"><input type="radio" name="US resident" id="US_yes">Yes</label>
+                      <label class="radio"><input type="radio" name="not US resident" id="US_no">No</label>
                 </div>
 
                 <div class="form-group">
@@ -104,20 +85,8 @@
 
                 <div class="form-group">
                     <p>Do you wish to advocate for UBI?</p>
-                    <div class="row radio">
-                      <div class="rad-head">
-                        <input type="radio" name="advocate" id="advYes">
-                        <label>Yes</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="field">
-                    <div class="row radio">
-                      <div class="rad-head">
-                        <input type="radio" name="advocate" id="advNo" checked>
-                        <label>No</label>
-                      </div>
-                    </div>
+                        <label class="radio"><input type="radio" name="advocate" id="advYes">Yes</label>
+                        <label class="radio"><input type="radio" name="advocate" id="advNo" checked>No</label>
                 </div>
                 <div class="disabled field ui input" id="firstInfo">
                     <label>First Name: </label>
